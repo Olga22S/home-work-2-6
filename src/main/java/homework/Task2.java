@@ -6,8 +6,9 @@ public class Task2 {
 
     public static void printEvenNums(List<Integer> nums) {
         nums.stream()
-                .filter(s -> s % 2 == 0)
+                .filter(num -> num % 2 == 0)
                 .sorted()
-                .distinct().forEach(s -> System.out.print(s + " "));
+                .distinct()
+                .forEach(num -> System.out.print(num + " "));
     }
 }

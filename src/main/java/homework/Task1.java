@@ -6,7 +6,7 @@ public class Task1 {
 
     public static void printOddNums(List<Integer> nums) {
         nums.stream()
-                .filter(s -> s % 2 != 0)
-                .forEach(s -> System.out.print(s + " "));
+                .filter(num -> num % 2 != 0)
+                .forEach(num -> System.out.print(num + " "));
     }
 }
